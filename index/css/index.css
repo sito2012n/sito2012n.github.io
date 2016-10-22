@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*字体移动效果*/
+
+@keyframes chapternav-slidein {
+	0% {
+		opacity: 0;
+	}
+	1% {
+		-webkit-transform: translateX(160px);
+		transform: translateX(160px);
+		-ms-transform: translateX(160px);
+		-moz-transform: translateX(160px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		-ms-transform: translateX(0);
+		-moz-transform: translateX(0);
+	}
+}
+
+.chapternav-item {
+	-webkit-animation: chapternav-slidein 350ms backwards;
+	animation: chapternav-slidein 350ms backwards;
+	-ms-animation: chapternav-slidein 350ms backwards;
+	-moz-animation: chapternav-slidein 350ms backwards;
+}
+
+
+/*适配各种浏览器*/
+
+
+/*定义字体*/
+
+@font-face {
+	font-family: apple;
+	src: url(../font/apple.woff) format('woff');
+}
+
+@font-face {
+	font-family: lanting;
+	src: url(../font/lanting.TTF) format('truetype');
+}
+
+.apple {
+	font-family: apple, arial, sans-serif;
+}
+
+.lanting {
+	font-family: lanting, arial, sans-serif;
+}

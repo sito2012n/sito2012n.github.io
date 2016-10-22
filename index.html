@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>sito2012n</title>
+		<style type="text/css">
+			body {
+				margin: 0px;
+				/*设置无边框*/
+				background-color: #444444;
+				font-size: 24px;
+			}
+			
+			a:active {
+				color: #323232;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #323232;
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: #323232;
+				text-decoration: none;
+			}
+			
+			a:link {
+				color: #323232;
+				text-decoration: none;
+			}
+		</style>
+
+		<script type="text/javascript">
+			//屏蔽了左右键的部分功能
+			document.onmousedown = click; //绑定禁用鼠标右键事件
+			document.onkeydown = ctrl_key; //绑定禁用键盘事件
+			function click() {
+				if(event.button == 2) //单击的鼠标键为右键
+				{
+					return false;
+				}
+			}
+
+			function ctrl_key() {
+				if(event.keyCode == 83) //禁用CTRL+S 保存网页代码
+				{
+					return false;
+				}
+				if(event.keyCode == 123) //禁用F12查看源代码
+				{
+					return false;
+				}
+			}
+		</script>
+
+		<link rel="stylesheet" href="index/css/index.css" type="text/css">
+		<link href="webfont/lanting/stylesheet.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body onselectstart="return false;" oncontextmenu="return false;" onkeydown="if(event.keyCode==27) return false;" style="white-space:nowrap" class="apple">
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<!--设置单元格无边框-->
+
+			<!--第一行-->
+			<tr>
+				<td height="48" align="center" valign="middle" bgcolor="#323232" style="color:#f4f4f4; font-size: 1em">sito2012n</td>
+			</tr>
+
+			<!--第二行-->
+			<tr>
+				<td height="110" align="center" valign="middle" bgcolor="#f4f4f4">
+					<!--第二行框架-->
+
+					<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" class="chapternav-item">
+						<!--外框架-->
+						<tr>
+							<td width="40%" height="110" valign="middle">
+								<!--第一框-->
+								<table width="60" height="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+									<!--两行-->
+									<tr>
+										<td align="center" valign="bottom">
+											<a href="https://github.com/sito2012n" target="_blank"><img src="index/img/about.svg"></a>
+										</td>
+									</tr>
+									<tr style="font-size:0.541em; color:#323232">
+										<td height="40" align="center" valign="top">
+											<a href="https://github.com/sito2012n" target="_blank">about me</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="20%" height="110" valign="middle">
+								<!--第二框-->
+								<table width="auto" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="center" valign="bottom"><img src="index/img/list.svg"></td>
+									</tr>
+									<tr style="font-size:0.541em; color:#323232">
+										<td height="40" align="center" valign="top">list</td>
+									</tr>
+								</table>
+							</td>
+
+							<td width="40%" height="110" valign="middle">
+								<!--第三框-->
+								<table width="60" height="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+									<tr>
+										<td align="center" valign="bottom"><img src="index/img/work.svg"></td>
+									</tr>
+									<tr style="font-size:0.541em; color:#323232">
+										<td height="40" align="center" valign="top">work</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<!--第三行-->
+			<tr>
+				<td height="auto" align="center" valign="top" bgcolor="#444444">
+					<table width="100%" height="auto" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="54">&nbsp;</td>
+						</tr>
+						<tr>
+							<td height="89" align="center" valign="top" style="font-size:3em; color:#000">Hello World</td>
+						</tr>
+						<tr>
+							<td height="73" align="center" valign="top">
+								<code class="lanting" style="font-size:0.667em">世界上第一台计算机</code>
+								<code class="apple" style="font-size:0.667em">ENIAC</code>
+								<code class="lanting" style="font-size:0.667em">诞生于1946年2月14日</code>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"><img src="index/img/code.png" width="400" height="48"></td>
+						</tr>
+						<td height="50" align="center" valign="middle" class="lanting" style="font-size: 0.667em; font-family: lanting, arial, sans-serif;">而如今</td>
+			</tr>
+			<tr>
+				<tr>
+					<td align="center" valign="top"><img src="index/img/codecn.png" width="327" height="61"></td>
+				</tr>
+				</table>
+				</td>
+			</tr>
+
+		</table>
+
+	</body>
+
+</html>
