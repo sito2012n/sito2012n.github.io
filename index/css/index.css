@@ -26,6 +26,10 @@
 	animation: chapternav-slidein 350ms backwards;
 	-ms-animation: chapternav-slidein 350ms backwards;
 	-moz-animation: chapternav-slidein 350ms backwards;
+	animation-delay: 1500ms;
+	-webkit-animation-delay: 1500ms;
+	-ms-animation-delay: 1500ms;
+	-moz-animation-delay: 1500ms;
 }
 
 
